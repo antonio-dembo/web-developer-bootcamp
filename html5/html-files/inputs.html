@@ -1,0 +1,45 @@
+<!-- radio button -->
+<!-- select tag -->
+<!-- textarea tag-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs Demo</title>
+</head>
+<body>
+    <p>Do you prefer cat or dog?</p>
+    <form>
+        <!-- By giving the same name to <input> element 
+        we conect both, that way we can only choose one-->
+        <label for ="dogs">Dogs:</label>
+        <input name="petChoice" id="dogs" type="radio" value="DOGS"> 
+
+        <label for="cats"> Cats:</label>
+        <input name="petChoice" id="cats" type="radio" value="CATS">
+        
+        <!-- the <select> tag helps to make nice Dropdown menu -->
+        <p>What is your current mood?</p>
+
+        <select name="mood">
+            <option value="happy">:(</option>
+            <option value="neutral">:|</option>
+            <option value="sad">:)</option>
+        </select>
+        <br>
+        <!-- <textarea> element -->
+        <!-- to send this to server we need to give a name to the elements-->
+        <label for="story">Tell us your story:</label><br>
+        
+        <textarea id="story" name="story" rows="5" cols="33">
+        It was a dark and stormy night ...
+        </textarea>
+
+        <button>GO!</button> <!-- a button in the end of a <form> element works like <input type="submit">-->
+    </form>
+
+
+</body>
+</html>
