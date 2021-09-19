@@ -2,7 +2,7 @@
 
 // select div with the id of 'container'. using Javascript
 // set it's text alignment to 'center'
-const content = document.querySelector('#content');
+const content = document.querySelector('#container');
 content.align = 'center';
 
 // select the image and use Javscript to git it a width of '150px' and 
